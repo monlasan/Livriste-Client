@@ -1,2 +1,6 @@
 <script setup></script>
-<template></template>
+<template>
+  <div class="font-poppins">
+    <router-view />
+  </div>
+</template>

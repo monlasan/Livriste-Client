@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-lg {
+    @apply p-3 px-5 text-lg flex items-center justify-center
+         text-white rounded-lg font-medium 
+		  bg-primary hover:shadow-lg
+		 hover:shadow-primary/40 transition-shadow duration-300;
+  }
+  .btn {
+    @apply px-4 py-2.5 focus:border-primary-200 border-2 border-transparent outline-none flex items-center justify-center text-white rounded-lg font-medium bg-primary hover:shadow-lg hover:shadow-primary/40 transition-shadow duration-300;
+  }
+  .btn-light {
+    @apply px-4 py-1 focus:border-primary-200 border-2 border-transparent outline-none flex items-center justify-center text-white rounded-lg font-medium  bg-primary hover:shadow-lg hover:shadow-primary/40 transition-shadow duration-300;
+  }
+  .btn-ring {
+    @apply px-4 py-1  flex items-center justify-center text-primary-700 rounded-lg font-medium outline outline-2 outline-primary-700 hover:shadow-lg hover:shadow-primary/40 transition-shadow duration-300;
+  }
+  .input {
+    @apply bg-white appearance-none placeholder:text-gray-400 focus:outline-none focus:bg-primary-50/10 border border-slate-100 focus:border-primary-500 p-2 px-3 shadow shadow-slate-200 text-sm rounded-lg;
+  }
+  .input-large {
+    @apply bg-white appearance-none placeholder:text-gray-400 focus:outline-none focus:bg-primary-50/10 border border-slate-100 focus:border-primary-500 p-3 px-3 shadow shadow-slate-200 text-sm rounded-lg;
+  }
+}
